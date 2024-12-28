@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    cursor: pointer;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg{
+   display: flex;
+   justify-content: center;
+   z-index: 4;
+}
+
+.bgBox{
+    position: relative;
+    display: flex;
+   justify-content: center;
+   width: 400px;
+   height: 600px;
+   background-color: red;
+}
+
+.head{
+    margin-top: 40%;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: black;
+    border-radius: 160px 160px 0 0;
+}
+
+.eyeLeft , .eyeRight{
+    position: absolute;
+    background-color: white;
+    clip-path: polygon(92% 49%, 0 10%, 70% 96%);
+    width: 120px;
+    height: 80px;
+    
+    
+}
+
+.eyeLeft {
+    left: 50px; 
+    top: 240px;
+}
+
+.eyeRight {
+    right: 50px; 
+    top: 240px; 
+    transform: scaleX(-1); 
+}
+
+.earLeft , .earRight{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    clip-path: polygon(81% 100%, 0 0, 0 100%);
+    background-color: black;
+}
+
+.earLeft{
+    top: 80px;
+    left: 0px; 
+}
+
+.earRight{
+    transform: scaleX(-1); 
+    top: 80px;
+    right: 0px;
+
+}
+
+.mouth{
+    top: 430px;
+    position: absolute;
+    width: 370px;
+    height: 330px;
+    background-color: rgb(157, 255, 128);
+    clip-path: polygon(51% 39%, 100% 25%, 93% 74%, 71% 100%, 30% 100%, 6% 71%, 1% 24%);
+}
+
+.body{
+    width: 1345px;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+    clip-path: polygon(50% 6%, 100% 41%, 100% 100%, 0 100%, 0 40%);
+}
+
+.logo{
+    transform: translate(105% , 120%);
+    position: absolute;
+    width: 440px;
+    height: 250px;
+    background-color: yellow;
+    border-radius: 50%;
+    z-index:6;
+}
+
+.subLogo{
+    z-index:8;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border-radius: 50%;
+    width: 408px;
+    height: 230px;
+    background-color: black;
+    overflow: hidden;
+
+
+}
+
+.subLogo .top-side{
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    position: absolute;
+    z-index: 99;
+    transform: translate(90px ,-3px) rotate(5deg);
+    border-radius: 50px 0 20px 20px;
+}
+
+.subLogo .top-side-2{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    transform:  translate(240px , -3px) scaleX(-1) rotate(5deg); 
+    border-radius: 50px 0 20px 20px;
+}
+
+.sHead{
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    background-color: yellow;
+    clip-path: polygon(0 63%, 99% 63%, 77% 100%, 24% 100%);
+    transform:  translate(164px , -40px)
+}
+
+.subLogo .dwn-side{
+    width: 50px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    z-index: 99;
+    transform: translate(145px ,160px) rotate(-30deg);
+    border-radius: 50px 50px 0px 50px;
+    
+    
+}
+
+.subLogo .dwn-side-2{
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background-color: yellow;
+    transform:  translate(220px , 160px) scaleX(-1) rotate(-30deg); 
+    border-radius: 50px 50px 0px 50px;
+    
+}
+
+.subLogo .dwn-subside{
+    width: 50px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    z-index: 99;
+    transform: translate(90px ,160px) rotate(-30deg);
+    border-radius: 40px 60px 0px 50px;
+    
+    
+}
+
+.subLogo .dwn-subside-2{
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background-color: yellow;
+    transform:  translate(275px , 160px) scaleX(-1) rotate(-30deg); 
+    border-radius: 40px 60px 0px 50px;
+    
+}
